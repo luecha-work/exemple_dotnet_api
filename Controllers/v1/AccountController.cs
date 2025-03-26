@@ -6,9 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Controllers
 {
-    // [ApiController]
-    // [Route("api/[controller]")]
-    [Route("api/v{version:apiVersion}/countries")]
+    [Route("api/v{version:apiVersion}/accounts")]
     [ApiController]
     [ApiVersion("1.0", Deprecated = true)]
     public class AccountController : ControllerBase

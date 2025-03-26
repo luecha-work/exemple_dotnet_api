@@ -15,13 +15,14 @@ namespace Repository.EntityFramework
     {
         private readonly ExempleApiDbContext _context;
         private readonly IHttpContextAccessor _httpContextAccessor;
-
         private readonly Lazy<IAccountsRepository> _accountRepository;
         private readonly Lazy<IRoleRepository> _roleRepository;
         private readonly Lazy<IAccountRolesRepository> _accountRolesRepository;
         private readonly Lazy<IAuthenticationManager> _authenticationManager;
         private readonly Lazy<ISystemSessionRepository> _systemSessionRepository;
         private readonly Lazy<IBlockBruteForceRepository> _blockBruteForceRepository;
+        private readonly Lazy<IBookLoanRepository> _bookLoanRepository;
+        private readonly Lazy<IBookRepository> _bookRepository;
 
         public RepositoryManager(
             ExempleApiDbContext context,
@@ -51,6 +52,12 @@ namespace Repository.EntityFramework
             _blockBruteForceRepository = new Lazy<IBlockBruteForceRepository>(
                 () => new BlockBruteForceRepository(_context)
             );
+            _bookLoanRepository = new Lazy<IBookLoanRepository>(
+                () => new BookLoanRepository(_context)
+            );
+            _bookRepository = new Lazy<IBookRepository>(
+                () => new BookRepository(_context)
+            );
         }
 
         public IAccountsRepository AccountRepository => _accountRepository.Value;
@@ -59,6 +66,8 @@ namespace Repository.EntityFramework
         public IAuthenticationManager AuthenticationManager => _authenticationManager.Value;
         public ISystemSessionRepository SystemSessionRepository => _systemSessionRepository.Value;
         public IBlockBruteForceRepository BlockBruteForceRepository => _blockBruteForceRepository.Value;
+        public IBookLoanRepository BookLoanRepository => _bookLoanRepository.Value;
+        public IBookRepository BookRepository => _bookRepository.Value;
 
         public void Commit() => _context.SaveChanges();
 

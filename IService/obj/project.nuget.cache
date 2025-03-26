@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KxqF6/x64gM=",
+  "dgSpecHash": "E4fgzggOI1E=",
   "success": true,
   "projectFilePath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IService\\IService.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Luecha\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
@@ -111,6 +112,8 @@
     "C:\\Users\\Luecha\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.2.0\\microsoft.identitymodel.tokens.7.2.0.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\microsoft.net.stringtools\\17.7.2\\microsoft.net.stringtools.17.7.2.nupkg.sha512",
+    "C:\\Users\\Luecha\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Luecha\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\8.0.0\\microsoft.visualstudio.web.codegeneration.8.0.0.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\8.0.0\\microsoft.visualstudio.web.codegeneration.core.8.0.0.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.design\\8.0.0\\microsoft.visualstudio.web.codegeneration.design.8.0.0.nupkg.sha512",
@@ -151,6 +154,7 @@
     "C:\\Users\\Luecha\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\system.reflection.metadata\\7.0.0\\system.reflection.metadata.7.0.0.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\system.reflection.metadataloadcontext\\7.0.0\\system.reflection.metadataloadcontext.7.0.0.nupkg.sha512",
+    "C:\\Users\\Luecha\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\system.security.cryptography.cng\\5.0.0\\system.security.cryptography.cng.5.0.0.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\system.security.cryptography.pkcs\\5.0.0\\system.security.cryptography.pkcs.5.0.0.nupkg.sha512",
@@ -159,6 +163,7 @@
     "C:\\Users\\Luecha\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
+    "C:\\Users\\Luecha\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\system.threading.tasks.dataflow\\7.0.0\\system.threading.tasks.dataflow.7.0.0.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
   ],

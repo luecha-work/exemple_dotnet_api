@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bFBHRskEjDo=",
+  "dgSpecHash": "h3hfOlKlU/Y=",
   "success": true,
   "projectFilePath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\UnitTest\\UnitTest.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,7 @@
     "C:\\Users\\Luecha\\.nuget\\packages\\aspnetcoreratelimit\\5.0.0\\aspnetcoreratelimit.5.0.0.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
-    "C:\\Users\\Luecha\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\Luecha\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\fractions\\7.2.1\\fractions.7.2.1.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\hangfire\\1.8.12\\hangfire.1.8.12.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\hangfire.aspnetcore\\1.8.12\\hangfire.aspnetcore.1.8.12.nupkg.sha512",

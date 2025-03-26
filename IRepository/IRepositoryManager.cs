@@ -15,8 +15,8 @@ namespace IRepository
         IAuthenticationManager AuthenticationManager { get; }
         IBlockBruteForceRepository BlockBruteForceRepository { get; }
         ISystemSessionRepository SystemSessionRepository { get; }
-
-        
+        IBookLoanRepository BookLoanRepository { get; }
+        IBookRepository BookRepository { get; }
 
         void Commit();
     }

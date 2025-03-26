@@ -135,15 +135,15 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
-      "Dapper/2.0.123": {
+      "Dapper/2.1.35": {
         "type": "package",
         "compile": {
-          "lib/net5.0/Dapper.dll": {
+          "lib/net7.0/Dapper.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net5.0/Dapper.dll": {
+          "lib/net7.0/Dapper.dll": {
             "related": ".xml"
           }
         }
@@ -5385,9 +5385,12 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Dapper": "2.1.35",
           "Entities": "1.0.0",
           "IRepository": "1.0.0",
-          "Shared": "1.0.0"
+          "Npgsql": "8.0.2",
+          "Shared": "1.0.0",
+          "System.Threading.Tasks": "4.3.0"
         },
         "compile": {
           "bin/placeholder/Repository.dll": {}
@@ -5407,6 +5410,8 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.6",
           "Repository": "1.0.0",
+          "Serilog": "4.2.0",
+          "Serilog.AspNetCore": "9.0.0",
           "Shared": "1.0.0"
         },
         "compile": {
@@ -5596,22 +5601,25 @@
         "coverlet.collector.nuspec"
       ]
     },
-    "Dapper/2.0.123": {
-      "sha512": "RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+    "Dapper/2.1.35": {
+      "sha512": "YKRwjVfrG7GYOovlGyQoMvr1/IJdn+7QzNXJxyMh0YfFF5yvDmTYaJOVYWsckreNjGsGSEtrMTpnzxTUq/tZQw==",
       "type": "package",
-      "path": "dapper/2.0.123",
+      "path": "dapper/2.1.35",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Dapper.png",
-        "dapper.2.0.123.nupkg.sha512",
+        "dapper.2.1.35.nupkg.sha512",
         "dapper.nuspec",
         "lib/net461/Dapper.dll",
         "lib/net461/Dapper.xml",
         "lib/net5.0/Dapper.dll",
         "lib/net5.0/Dapper.xml",
+        "lib/net7.0/Dapper.dll",
+        "lib/net7.0/Dapper.xml",
         "lib/netstandard2.0/Dapper.dll",
-        "lib/netstandard2.0/Dapper.xml"
+        "lib/netstandard2.0/Dapper.xml",
+        "readme.md"
       ]
     },
     "Fractions/7.2.1": {
