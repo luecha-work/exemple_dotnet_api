@@ -23,3 +23,4 @@ C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Service\obj\Debu
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Service\obj\Debug\net8.0\Service.pdb
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Service\obj\Debug\net8.0\Service.genruntimeconfig.cache
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Service\obj\Debug\net8.0\ref\Service.dll
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Service\obj\Debug\net8.0\Service.sourcelink.json

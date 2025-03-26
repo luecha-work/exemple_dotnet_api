@@ -324,3 +324,4 @@ C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\exemple_dotnet_a
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\exemple_dotnet_api\obj\Debug\net8.0\Exemple_Dotnet_API.pdb
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\exemple_dotnet_api\obj\Debug\net8.0\Exemple_Dotnet_API.genruntimeconfig.cache
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\exemple_dotnet_api\obj\Debug\net8.0\ref\Exemple_Dotnet_API.dll
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\exemple_dotnet_api\obj\Debug\net8.0\Exemple_Dotnet_API.sourcelink.json

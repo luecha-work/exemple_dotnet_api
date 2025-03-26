@@ -1,7 +1,8 @@
 ﻿using Shared.ConfigurationModels;
 using IService;
 using IRepository;
-using Serilog;
+// using Serilog;
+using Microsoft.Extensions.Logging;
 
 namespace Service
 {
@@ -16,24 +17,25 @@ namespace Service
         public HangfireJobService(
             IRepositoryFactory repositoryFactory,
             IServiceManager service,
-            IUserProvider userProvider
+            IUserProvider userProvider,
+            ILogger<HangfireJobService> logger
         )
         {
             _repositoryDPManager = repositoryFactory.Create(RepoType.Dapper);
             _repositoryEFManager = repositoryFactory.Create(RepoType.EntityFramework);
             _service = service;
             _userProvider = userProvider;
-            _logger = Log.ForContext<HangfireJobService>();
+            _logger = logger;
         }
 
         public void TestCreateJob()
         {
-            _logger.Information("************ TestCreateJob");
+            _logger.LogInformation("************ TestCreateJob");
         }
 
         public void TestCreateRecurringJob()
         {
-            _logger.Information("************ TestCreateRecurringJob");
+            _logger.LogInformation("************ TestCreateRecurringJob");
         }
 
         public void TestRepositoryDPManagerForBook()

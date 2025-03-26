@@ -13,3 +13,4 @@ C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\obj\Debug
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\obj\Debug\net8.0\refint\Shared.dll
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\obj\Debug\net8.0\Shared.pdb
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\obj\Debug\net8.0\ref\Shared.dll
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\obj\Debug\net8.0\Shared.sourcelink.json

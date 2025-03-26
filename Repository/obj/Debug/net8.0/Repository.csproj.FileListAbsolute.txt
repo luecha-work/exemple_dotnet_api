@@ -17,3 +17,4 @@ C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Repository\obj\D
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Repository\obj\Debug\net8.0\refint\Repository.dll
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Repository\obj\Debug\net8.0\Repository.pdb
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Repository\obj\Debug\net8.0\ref\Repository.dll
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Repository\obj\Debug\net8.0\Repository.sourcelink.json

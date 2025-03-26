@@ -105,11 +105,11 @@
         }
       },
       "coverlet.collector/6.0.0": {},
-      "Dapper/2.0.123": {
+      "Dapper/2.1.35": {
         "runtime": {
-          "lib/net5.0/Dapper.dll": {
+          "lib/net7.0/Dapper.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.123.33578"
+            "fileVersion": "2.1.35.13827"
           }
         }
       },
@@ -224,7 +224,7 @@
       },
       "Hangfire.PostgreSql/1.20.8": {
         "dependencies": {
-          "Dapper": "2.0.123",
+          "Dapper": "2.1.35",
           "Hangfire.Core": "1.8.12",
           "Microsoft.CSharp": "4.7.0",
           "Npgsql": "8.0.2"
@@ -3436,6 +3436,7 @@
       "Controllers/1.0.0": {
         "dependencies": {
           "IService": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Versioning": "5.1.0",
           "Service": "1.0.0",
           "Shared": "1.0.0"
         },
@@ -3529,9 +3530,12 @@
       },
       "Repository/1.0.0": {
         "dependencies": {
+          "Dapper": "2.1.35",
           "Entities": "1.0.0",
           "IRepository": "1.0.0",
-          "Shared": "1.0.0"
+          "Npgsql": "8.0.2",
+          "Shared": "1.0.0",
+          "System.Threading.Tasks": "4.3.0"
         },
         "runtime": {
           "Repository.dll": {
@@ -3549,6 +3553,8 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.6",
           "Repository": "1.0.0",
+          "Serilog": "4.2.0",
+          "Serilog.AspNetCore": "9.0.0",
           "Shared": "1.0.0"
         },
         "runtime": {
@@ -3642,12 +3648,12 @@
       "path": "coverlet.collector/6.0.0",
       "hashPath": "coverlet.collector.6.0.0.nupkg.sha512"
     },
-    "Dapper/2.0.123": {
+    "Dapper/2.1.35": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
-      "path": "dapper/2.0.123",
-      "hashPath": "dapper.2.0.123.nupkg.sha512"
+      "sha512": "sha512-YKRwjVfrG7GYOovlGyQoMvr1/IJdn+7QzNXJxyMh0YfFF5yvDmTYaJOVYWsckreNjGsGSEtrMTpnzxTUq/tZQw==",
+      "path": "dapper/2.1.35",
+      "hashPath": "dapper.2.1.35.nupkg.sha512"
     },
     "Fractions/7.2.1": {
       "type": "package",

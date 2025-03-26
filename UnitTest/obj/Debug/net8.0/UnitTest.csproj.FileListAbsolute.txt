@@ -398,3 +398,4 @@ C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\UnitTest\obj\Deb
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\UnitTest\obj\Debug\net8.0\UnitTest.pdb
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\UnitTest\obj\Debug\net8.0\UnitTest.genruntimeconfig.cache
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\UnitTest\obj\Debug\net8.0\ref\UnitTest.dll
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\UnitTest\obj\Debug\net8.0\UnitTest.sourcelink.json

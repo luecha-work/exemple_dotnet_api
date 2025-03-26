@@ -14,6 +14,8 @@ namespace Service
         private readonly Lazy<IAuthenticationService> _authenticationService;
         private readonly Lazy<IBlockBruteForceService> _blockBruteForceService;
         private readonly Lazy<ISystemSessionService> _systemSessionService;
+        private readonly Lazy<IBookLoanService> _bookLoanService;
+        private readonly Lazy<IBookService> _bookService;
 
         public ServiceManager(
           IRepositoryFactory repositoryFactory,
@@ -22,7 +24,7 @@ namespace Service
           IConfiguration configuration,
           IOptions<JwtConfiguration> configurationJwt,
           IOptions<IdentityProviderConfigure> configurationIdentityConfigure
-      )
+        )
         {
 
             _httpContextAccessor = httpContextAccessor;
@@ -38,11 +40,19 @@ namespace Service
             _authenticationService = new Lazy<IAuthenticationService>(
                 () => new AuthenticationService(_repositoryEFManager, SystemSessionService, BlockBruteForceService, configuration, configurationJwt, configurationIdentityConfigure, mapper)
             );
+            _bookLoanService = new Lazy<IBookLoanService>(
+                () => new BookLoanService(_repositoryEFManager, mapper)
+            );
+            _bookService = new Lazy<IBookService>(
+                () => new BookService(_repositoryEFManager, mapper)
+            );
         }
 
         public IAuthenticationService AuthenticationService => _authenticationService.Value;
         public IBlockBruteForceService BlockBruteForceService => _blockBruteForceService.Value;
         public ISystemSessionService SystemSessionService => _systemSessionService.Value;
+        public IBookLoanService BookLoanService => _bookLoanService.Value;
+        public IBookService BookService => _bookService.Value;
 
         private IUserProvider? GetUserProviderAsync()
         {

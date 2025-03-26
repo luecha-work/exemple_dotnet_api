@@ -11,5 +11,7 @@ namespace IService
         IAuthenticationService AuthenticationService { get; }
         IBlockBruteForceService BlockBruteForceService { get; }
         ISystemSessionService SystemSessionService { get; }
+        IBookLoanService BookLoanService { get; }
+        IBookService BookService { get; }
     }
 }

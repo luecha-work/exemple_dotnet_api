@@ -23,3 +23,4 @@ C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Controllers\obj\
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Controllers\obj\Debug\net8.0\refint\Controllers.dll
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Controllers\obj\Debug\net8.0\Controllers.pdb
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Controllers\obj\Debug\net8.0\ref\Controllers.dll
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Controllers\obj\Debug\net8.0\Controllers.sourcelink.json

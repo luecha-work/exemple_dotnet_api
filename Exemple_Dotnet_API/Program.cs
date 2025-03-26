@@ -12,6 +12,7 @@ using Exemple_Dotnet_API.HealthCheck;
 using Exemple_Dotnet_API.Middleware;
 using Serilog;
 using Shared.ConfigurationModels;
+using Exemple_Dotnet_API.ContextFactory;
 using IService;
 using Service;
 
@@ -28,11 +29,11 @@ builder.Services.AddDbContext<ExempleApiDbContext>(
     ServiceLifetime.Singleton
 );
 
-// Add services to the container.
 builder.Host.ConfigureSerilog();
 builder.Services.ConfigureCors(builder.Configuration);
 builder.Services.ConfigureIISIntegration();
 builder.Services.AddMemoryCache();
+builder.Services.ConfigureSwagger();
 builder.Services.ConfigureSession(builder.Configuration);
 builder.Services.ConfigureRateLimitingOptions();
 builder.Services.AddHttpContextAccessor();
@@ -42,33 +43,32 @@ builder.Services.ConfigureIdentityCore(builder.Configuration);
 builder.Services.ConfigureHangfireJob(builder.Configuration);
 builder.Services.AddAuthentication();
 builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddScoped<IUserProvider, UserProvider>();
 builder.Services.AddJwtConfiguration(builder.Configuration);
 builder.Services.AddAuthProviderConfiguration(builder.Configuration);
 builder.Services.AddAesEncryptionConfiguration(builder.Configuration);
-builder.Services.AddScoped<IUserProvider, UserProvider>();
+AppContext.SetSwitch("System.Drawing.EnableUnixSupport", true);
+
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
 });
-// builder.Services.ConfigureServiceManager();
-
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
 //TODO: Add Scoped
 builder.Services.AddScoped(
     typeof(IGenericRepositoryEntityFramework<>),
     typeof(Repository.EntityFramework.GenericRepository<>)
 );
-
 builder.Services.AddScoped<IServiceManager, ServiceManager>();
 builder.Services.AddScoped<Repository.Dapper.RepositoryManager>();
 builder.Services.AddScoped<Repository.EntityFramework.RepositoryManager>();
-builder.Services.AddScoped<IRepositoryFactory, Exemple_Dotnet_API.ContextFactory.RepositoryFactory>();
+builder.Services.AddScoped<IRepositoryFactory, RepositoryFactory>();
 
 //TODO: Add HangfireJob Service
-// builder.Services.AddScoped<IService.IHangfireJobService, Service.HangfireJobService>();
+builder.Services.AddScoped<IService.IHangfireJobService, Service.HangfireJobService>();
+
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
 
 builder
     .Services.AddHealthChecks()
@@ -76,26 +76,17 @@ builder
     .AddCheck<DbHealthCheck>(nameof(DbHealthCheck))
     .AddCheck<ApiHealthCheck>(nameof(ApiHealthCheck));
 
+builder
+    .Services.AddControllers(options =>
+    {
+        options.Filters.Add(new ValidateModelStateFilter());
+    });
+
 builder.Services.AddHealthChecksUI().AddInMemoryStorage();
-
-// TODO: Add Validate Model State Filter
-builder.Services.AddControllers(options =>
-{
-    options.Filters.Add(new ValidateModelStateFilter());
-});
-
 
 var app = builder.Build();
 
 app.ConfigureExceptionHandler();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    //app.UseSwagger();
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
 
 if (app.Environment.IsProduction())
 {
@@ -109,6 +100,26 @@ if (app.Environment.IsProduction())
         }
     );
 }
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+// Request size limits are applied at the application level.
+app.Use(
+    async (context, next) =>
+    {
+        var maxRequestBodySizeFeature = context.Features.Get<IHttpMaxRequestBodySizeFeature>();
+        if (maxRequestBodySizeFeature != null)
+        {
+            maxRequestBodySizeFeature.MaxRequestBodySize = 150 * 1024 * 1024; // 150 MB
+        }
+        await next();
+    }
+);
 
 app.Use(
     async (context, next) =>
@@ -130,33 +141,19 @@ app.Use(
     }
 );
 
-// Request size limits are applied at the application level.
-app.Use(
-    async (context, next) =>
-    {
-        var maxRequestBodySizeFeature = context.Features.Get<IHttpMaxRequestBodySizeFeature>();
-        if (maxRequestBodySizeFeature != null)
-        {
-            maxRequestBodySizeFeature.MaxRequestBodySize = 150 * 1024 * 1024; // 150 MB
-        }
-        await next();
-    }
-);
-
 HangfireConfigurator.ConfigureHangfireDashboardAndJobs(app, builder.Configuration);
 
-app.UseStaticFiles();
 app.UseForwardedHeaders(new ForwardedHeadersOptions { ForwardedHeaders = ForwardedHeaders.All });
 app.UseSession();
 app.UseSerilogRequestLogging();
 app.UseHttpsRedirection();
-app.UseStaticFiles();
 app.UseHangfireDashboard();
 app.UseIpRateLimiting();
 app.UseCors("CorsPolicy");
-
-//app.UseMiddleware<JwtUserProviderMiddleware>();
-// app.UseMiddleware<SurveySystemSessionMiddleware>();
+app.UseAuthentication();
+app.UseAuthorization();
+app.UseMiddleware<SurveySystemSessionMiddleware>();
+app.UseStaticFiles();
 
 app.MapHealthChecks(
     "/healthcheck",
@@ -166,11 +163,8 @@ app.MapHealthChecks(
     }
 );
 
-app.UseHttpsRedirection();
-
-app.UseAuthentication();
-app.UseAuthorization();
-app.MapHealthChecksUI();
 app.MapControllers();
+
+app.MapHealthChecksUI();
 
 app.Run();

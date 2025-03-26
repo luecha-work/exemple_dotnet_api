@@ -15,3 +15,4 @@ C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\IRepository\obj\
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\IRepository\obj\Debug\net8.0\refint\IRepository.dll
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\IRepository\obj\Debug\net8.0\IRepository.pdb
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\IRepository\obj\Debug\net8.0\ref\IRepository.dll
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\IRepository\obj\Debug\net8.0\IRepository.sourcelink.json

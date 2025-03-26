@@ -19,3 +19,4 @@ C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\IService\obj\Deb
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\IService\obj\Debug\net8.0\refint\IService.dll
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\IService\obj\Debug\net8.0\IService.pdb
 C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\IService\obj\Debug\net8.0\ref\IService.dll
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\IService\obj\Debug\net8.0\IService.sourcelink.json
