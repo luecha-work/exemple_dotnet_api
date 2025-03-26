@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "PlTYX5azoQ5/TkADxsmpkgPvB2ELRBJ922hFGpcKN1o=",
+  "Source": "Exemple_Dotnet_API",
+  "BasePath": "_content/Exemple_Dotnet_API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

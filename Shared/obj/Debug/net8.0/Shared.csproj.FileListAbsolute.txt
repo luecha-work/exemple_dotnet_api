@@ -1,0 +1,15 @@
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\bin\Debug\net8.0\Shared.deps.json
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\bin\Debug\net8.0\Shared.dll
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\bin\Debug\net8.0\Shared.pdb
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\bin\Debug\net8.0\Entities.dll
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\bin\Debug\net8.0\Entities.pdb
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\obj\Debug\net8.0\Shared.csproj.AssemblyReference.cache
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\obj\Debug\net8.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\obj\Debug\net8.0\Shared.AssemblyInfoInputs.cache
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\obj\Debug\net8.0\Shared.AssemblyInfo.cs
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\obj\Debug\net8.0\Shared.csproj.CoreCompileInputs.cache
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\obj\Debug\net8.0\Shared.csproj.Up2Date
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\obj\Debug\net8.0\Shared.dll
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\obj\Debug\net8.0\refint\Shared.dll
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\obj\Debug\net8.0\Shared.pdb
+C:\Users\Luecha\Documents\Dev\Project_Dotnet\exemple_dotnet_api\Shared\obj\Debug\net8.0\ref\Shared.dll

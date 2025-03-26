@@ -1,0 +1,913 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\UnitTest\\UnitTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Controllers\\Controllers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Controllers\\Controllers.csproj",
+        "projectName": "Controllers",
+        "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Controllers\\Controllers.csproj",
+        "packagesPath": "C:\\Users\\Luecha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Controllers\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luecha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IService\\IService.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IService\\IService.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Service\\Service.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Shared\\Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Entities\\Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\Luecha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luecha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\exemple_dotnet_api\\Exemple_Dotnet_API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\exemple_dotnet_api\\Exemple_Dotnet_API.csproj",
+        "projectName": "Exemple_Dotnet_API",
+        "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\exemple_dotnet_api\\Exemple_Dotnet_API.csproj",
+        "packagesPath": "C:\\Users\\Luecha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\exemple_dotnet_api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luecha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Controllers\\Controllers.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Controllers\\Controllers.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Entities\\Entities.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IRepository\\IRepository.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IRepository\\IRepository.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IService\\IService.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IService\\IService.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Repository\\Repository.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Service\\Service.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Shared\\Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AspNetCore.HealthChecks.UI": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "AspNetCore.HealthChecks.UI.Client": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "AspNetCore.HealthChecks.UI.InMemory.Storage": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "AspNetCoreRateLimit": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.12, )"
+            },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.8.12, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.8.12, )"
+            },
+            "Hangfire.Dashboard.Basic.Authentication": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Hangfire.PostgreSql": {
+              "target": "Package",
+              "version": "[1.20.8, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Scalar.AspNetCore": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Expressions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Serilog.Sinks.PostgreSQL": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IRepository\\IRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IRepository\\IRepository.csproj",
+        "projectName": "IRepository",
+        "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IRepository\\IRepository.csproj",
+        "packagesPath": "C:\\Users\\Luecha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luecha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Entities\\Entities.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Shared\\Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IService\\IService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IService\\IService.csproj",
+        "projectName": "IService",
+        "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IService\\IService.csproj",
+        "packagesPath": "C:\\Users\\Luecha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luecha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Entities\\Entities.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IRepository\\IRepository.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IRepository\\IRepository.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Repository\\Repository.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Shared\\Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Repository\\Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\Luecha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luecha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Entities\\Entities.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IRepository\\IRepository.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IRepository\\IRepository.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Shared\\Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Service\\Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Service\\Service.csproj",
+        "projectName": "Service",
+        "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\Luecha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luecha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Entities\\Entities.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IRepository\\IRepository.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IRepository\\IRepository.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IService\\IService.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\IService\\IService.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Repository\\Repository.csproj"
+              },
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Shared\\Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Shared\\Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Shared\\Shared.csproj",
+        "projectName": "Shared",
+        "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\Luecha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luecha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Identity.Client": {
+              "target": "Package",
+              "version": "[4.60.3, )"
+            },
+            "Microsoft.IdentityModel.Protocols": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\UnitTest\\UnitTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\UnitTest\\UnitTest.csproj",
+        "projectName": "UnitTest",
+        "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\UnitTest\\UnitTest.csproj",
+        "packagesPath": "C:\\Users\\Luecha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\UnitTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Luecha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\exemple_dotnet_api\\Exemple_Dotnet_API.csproj": {
+                "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\exemple_dotnet_api\\Exemple_Dotnet_API.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
