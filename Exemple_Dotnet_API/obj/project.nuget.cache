@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4T41mhmWUuM=",
+  "dgSpecHash": "QZzjU/LUDH8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\Exemple_Dotnet_API\\Exemple_Dotnet_API.csproj",
+  "projectFilePath": "C:\\Users\\Luecha\\Documents\\Dev\\Project_Dotnet\\exemple_dotnet_api\\exemple_dotnet_api\\Exemple_Dotnet_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luecha\\.nuget\\packages\\aspnetcore.healthchecks.ui\\8.0.0\\aspnetcore.healthchecks.ui.8.0.0.nupkg.sha512",
     "C:\\Users\\Luecha\\.nuget\\packages\\aspnetcore.healthchecks.ui.client\\8.0.0\\aspnetcore.healthchecks.ui.client.8.0.0.nupkg.sha512",

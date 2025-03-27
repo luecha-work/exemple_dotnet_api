@@ -1,0 +1,24 @@
+.vs/
+
+# Bin and Obj folders
+obj/
+Exemple_Dotnet_API/bin/
+Exemple_Dotnet_API/obj/
+Controllers/bin/
+Controllers/obj/
+Repository/bin/
+Repository/obj/
+IRepository/bin/
+IRepository/obj/
+Entities/bin/
+Entities/obj/
+# SerilogService/bin/
+# SerilogService/obj/
+Service/bin/
+Service/obj/
+IService/bin/
+IService/obj/
+Shared/bin/
+Shared/obj/
+UnitTest/bin/
+UnitTest/obj/
