@@ -1,6 +1,7 @@
 ﻿using Hangfire;
 using Hangfire.PostgreSql;
 using HangfireBasicAuthenticationFilter;
+using IService;
 using Newtonsoft.Json;
 using Npgsql;
 
@@ -90,19 +91,19 @@ namespace Exemple_Dotnet_API.Extensions
                 // TimeZone = TimeZoneInfo.FindSystemTimeZoneById("SE Asia Standard Time")
             };
 
-            //RecurringJob.AddOrUpdate<IHangfireJobService>(
-            //    "AutoDenyCmsRequestForStepTwo",
-            //    jobService => jobService.CheckConditionToAutoDenyCmsRequestForStepTwo(),
-            //    "0 9 * * 1-5",
-            //    recurringJobOptions
-            //);
+            RecurringJob.AddOrUpdate<IHangfireJobService>(
+                "Test_CreateJob",
+                jobService => jobService.TestCreateJob(),
+                "* * * * *",
+                recurringJobOptions
+            );
 
-            //RecurringJob.AddOrUpdate<IHangfireJobService>(
-            //    "AutoDenyCmsRequestForStepThreePointTwo",
-            //    jobService => jobService.CheckConditionToAutoDenyForStepThreePointTwo(),
-            //    "10 9 * * 1-5",
-            //    recurringJobOptions
-            //);
+            RecurringJob.AddOrUpdate<IHangfireJobService>(
+                "Test_CreateRecurringJob",
+                jobService => jobService.TestCreateRecurringJob(),
+                "*/3 * * * *",
+                recurringJobOptions
+            );
 
             // RecurringJob.AddOrUpdate<IHangfireJobService>(
             //     "RemoveOldLogs",

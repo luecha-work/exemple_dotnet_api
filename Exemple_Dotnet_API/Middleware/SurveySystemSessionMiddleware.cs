@@ -40,6 +40,7 @@ namespace Exemple_Dotnet_API.Middleware
                 if (IsAuthenticationRequired(controller, methodName))
                 {
                     string? authorizationHeader = context.Request.Headers.Authorization;
+
                     if (
                         !string.IsNullOrEmpty(authorizationHeader)
                         && authorizationHeader.StartsWith("Bearer ")
@@ -49,7 +50,7 @@ namespace Exemple_Dotnet_API.Middleware
                             .Request.Headers.Authorization.ToString()
                             .Replace("Bearer ", "");
 
-                        if (!string.IsNullOrEmpty(token))
+                        if (string.IsNullOrEmpty(token))
                         {
                             throw new VerificationTokenNotFoundForCheckSessionException();
                         }
@@ -60,6 +61,7 @@ namespace Exemple_Dotnet_API.Middleware
                         {
                             throw new FailedAuthenticateSessionException();
                         }
+
                         string sessionId = JWTHelper.GetSessionIdFromToken(token);
                         string accountId = JWTHelper.GetAccoutIdFromToken(token);
                         Guid guidSessionId = Guid.Parse(sessionId);

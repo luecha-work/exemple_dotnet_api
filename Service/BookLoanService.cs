@@ -50,8 +50,8 @@ namespace Service
             {
                 BookId = createLoanDto.BookId,
                 AccountId = createLoanDto.AccountId,
-                LoanDate = DateTime.Now,
-                DueDate = DateTime.Now.AddDays(14), // Default loan period is 14 days
+                LoanDate = DateTime.UtcNow,
+                DueDate = DateTime.UtcNow.AddDays(14), // Default loan period is 14 days
                 ReturnDate = null,
             };
 

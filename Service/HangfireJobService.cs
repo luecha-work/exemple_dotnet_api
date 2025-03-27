@@ -40,12 +40,12 @@ namespace Service
 
         public void TestRepositoryDPManagerForBook()
         {
-            throw new NotImplementedException();
+            _logger.LogInformation("************ TestRepositoryDPManagerForBook");
         }
 
         public void TestRepositoryEFManagerForBook()
         {
-            throw new NotImplementedException();
+            _logger.LogInformation("************ TestRepositoryEFManagerForBook");
         }
     }
 }

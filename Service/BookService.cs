@@ -6,7 +6,6 @@ using AutoMapper;
 using Entities;
 using IRepository;
 using IService;
-using Microsoft.EntityFrameworkCore;
 using Shared.DTOs;
 
 namespace Service
@@ -28,23 +27,17 @@ namespace Service
         public async Task<BookDto> CreateBookAsync(CreateBookDto createBookDto)
         {
             // Create new book entity
-            var book = new Book
-            {
-                Title = createBookDto.Title,
-                Author = createBookDto.Author,
-                Isbn = createBookDto.Isbn,
-                PublicationYear = createBookDto.PublicationYear,
-                Category = createBookDto.Category,
-                Status = "Available", // Default status
-                CreatedAt = DateTime.Now,
-                UpdatedAt = DateTime.Now
-            };
+            var bookForCreate = _mapper.Map<Book>(createBookDto);
+
+            bookForCreate.CreatedAt = DateTime.UtcNow;
+            bookForCreate.CreatedBy = "system";
 
             // Add to repository
-            await _repositoryManager.BookRepository.CreateAsync(book);
+            await _repositoryManager.BookRepository.CreateAsync(bookForCreate);
+            var book = _mapper.Map<BookDto>(bookForCreate);
 
             // Return mapped DTO
-            return _mapper.Map<BookDto>(book);
+            return book;
         }
 
         public async Task<bool> DeleteBookAsync(int id)
